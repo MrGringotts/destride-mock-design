@@ -22,13 +22,35 @@
     </div>
     <span class="nav-logo-text">DE<span>S</span>T</span>
   </div>
-  <div class="nav-links">
-    <button class="nav-link active" onclick="showPage('home')">Home</button>
-    <button class="nav-link" onclick="showPage('about')">How It Works</button>
-    <button class="nav-link" onclick="showPage('advertise')">Advertise</button>
-    <button class="nav-link" onclick="showPage('booking')">Book a Ride</button>
+  <div class="nav-links nav-links-desktop">
+    <button class="nav-link active" data-page="home" onclick="showPage('home')">Home</button>
+    <button class="nav-link" data-page="about" onclick="showPage('about')">How It Works</button>
+    <button class="nav-link" data-page="advertise" onclick="showPage('advertise')">Advertise</button>
+    <button class="nav-link" data-page="booking" onclick="showPage('booking')">Book a Ride</button>
   </div>
-  <button class="nav-cta" onclick="showPage('booking')">Book Party Rental</button>
+
+  <button class="nav-cta nav-cta-desktop" onclick="showPage('booking')">Book Party Rental</button>
+
+  <button
+    class="nav-hamburger"
+    aria-label="Open menu"
+    aria-expanded="false"
+    onclick="toggleNav()"
+  >
+    <span class="hamburger-lines" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </button>
+
+  <div class="nav-mobile-menu" aria-label="Mobile navigation">
+    <button class="nav-link active" data-page="home" onclick="showPage('home')">Home</button>
+    <button class="nav-link" data-page="about" onclick="showPage('about')">How It Works</button>
+    <button class="nav-link" data-page="advertise" onclick="showPage('advertise')">Advertise</button>
+    <button class="nav-link" data-page="booking" onclick="showPage('booking')">Book a Ride</button>
+    <button class="nav-cta nav-cta-mobile" onclick="showPage('booking')">Book Party Rental</button>
+  </div>
 </nav>
 
 <!-- ══════════════ HOME ══════════════ -->
@@ -362,14 +384,14 @@
     <div>
       <div class="footer-col-title">Follow DEST</div>
       <ul class="footer-links">
-        <li><a href="https://www.instagram.com/destridesa" target="_blank">Instagram @destridesa</a></li>
+        <li><a href="#">Instagram</a></li>
         <li><a href="#">Facebook</a></li>
         <li><a href="#">TikTok</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 Dest LLC · San Antonio, TX</span>
+    <span>Copyright © 2026</span>
     <span class="footer-badge">Free Electric Rides</span>
   </div>
 </footer>

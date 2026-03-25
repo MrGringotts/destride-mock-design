@@ -7,10 +7,27 @@
 function showPage(id) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
-  const map = { home: 0, about: 1, advertise: 2, booking: 3 };
-  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-  document.querySelectorAll('.nav-link')[map[id]]?.classList.add('active');
+  document.querySelectorAll('.nav-link').forEach(l => {
+    l.classList.toggle('active', l.dataset.page === id);
+  });
   window.scrollTo(0, 0);
+  closeNav();
+}
+
+function closeNav() {
+  const nav = document.querySelector('nav');
+  if (!nav) return;
+  nav.classList.remove('nav-open');
+  const btn = nav.querySelector('.nav-hamburger');
+  if (btn) btn.setAttribute('aria-expanded', 'false');
+}
+
+function toggleNav() {
+  const nav = document.querySelector('nav');
+  if (!nav) return;
+  const isOpen = nav.classList.toggle('nav-open');
+  const btn = nav.querySelector('.nav-hamburger');
+  if (btn) btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 }
 
 // ── CALENDAR ──
