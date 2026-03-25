@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEST – Free Electric Ride-Share · San Antonio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-circle">
+      <svg width="26" height="20" viewBox="0 0 26 20" fill="none">
+        <circle cx="5" cy="14" r="4" fill="#F56A00"/>
+        <rect x="1" y="6" width="20" height="9" rx="3" fill="#1664B8"/>
+        <rect x="14" y="3" width="9" height="7" rx="2" fill="#0D4C8B"/>
+        <circle cx="20" cy="14" r="4" fill="#F56A00"/>
+      </svg>
+    </div>
+    <span class="nav-logo-text">DE<span>S</span>T</span>
+  </div>
+  <div class="nav-links">
+    <button class="nav-link active" onclick="showPage('home')">Home</button>
+    <button class="nav-link" onclick="showPage('about')">How It Works</button>
+    <button class="nav-link" onclick="showPage('advertise')">Advertise</button>
+    <button class="nav-link" onclick="showPage('booking')">Book a Ride</button>
+  </div>
+  <button class="nav-cta" onclick="showPage('booking')">Book Party Rental</button>
+</nav>
+
+<!-- ══════════════ HOME ══════════════ -->
+<div id="page-home" class="page active">
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-eyebrow">San Antonio's Free Ride-Share</div>
+      <h1 class="hero-title">Ride Free.<span class="highlight">Always.</span></h1>
+      <p class="hero-desc">San Antonio's eco-friendly electric shuttle — 100% free to riders, powered by local businesses who advertise on board.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="showPage('booking')">Book a Party Ride</button>
+        <button class="btn-ghost" onclick="showPage('about')">How It Works →</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="car-graphic">DEST</div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="hero-stat-num">FREE</div><div class="hero-stat-label">Every Ride</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">100%</div><div class="hero-stat-label">Electric</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">SA</div><div class="hero-stat-label">Based</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="background: var(--white);">
+    <div class="section-label">The DEST Model</div>
+    <h2 class="section-title">Free for Riders,<br>Funded by Business</h2>
+    <p class="section-desc">Local businesses advertise on our electric vehicles — so you ride for free. A win for riders, businesses, and the environment.</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-icon">🏪</div>
+        <div class="step-title">Businesses Advertise</div>
+        <p class="step-body">Restaurants, bars, lawyers, and local businesses pay to wrap our vehicles or display ads on our iPad screens.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-icon">⚡</div>
+        <div class="step-title">We Run the Fleet</div>
+        <p class="step-body">DEST operates a fleet of eco-friendly electric shuttles across San Antonio, funded by advertising partners.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-icon">🎉</div>
+        <div class="step-title">You Ride Free</div>
+        <p class="step-body">Hop in, sit back, and arrive safely — no fare, no surge pricing, no app required. Just a free, clean ride.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="blue-band">
+    <div>
+      <div class="blue-band-title">Planning a Private Party?<br><span>Reserve a DEST Vehicle</span></div>
+      <p class="blue-band-desc">Book a private shuttle for your next event, bar crawl, or celebration. A deposit holds your date.</p>
+    </div>
+    <button class="btn-primary" onclick="showPage('booking')">Check Availability →</button>
+  </div>
+</div>
+
+<!-- ══════════════ ADVERTISE ══════════════ -->
+<div id="page-advertise" class="page">
+  <div class="advertise-hero">
+    <div>
+      <div class="section-label">Advertise With DEST</div>
+      <h2 class="section-title" style="color:white; font-size:clamp(44px,5vw,72px);">Put Your Brand on the Move</h2>
+      <p class="section-desc">Thousands of eyes on your business every day — on our vehicle exteriors or in-car iPad screens. Two tiers, both powerful.</p>
+    </div>
+    <div class="ad-reach-card">
+      <div class="reach-stat">
+        <div class="reach-stat-val">Thousands Daily</div>
+        <div class="reach-stat-label">Riders across San Antonio's most active corridors</div>
+      </div>
+      <div class="reach-stat">
+        <div style="font-size:15px; color:rgba(255,255,255,0.85); font-weight:600;">Vehicle Wraps &nbsp;·&nbsp; iPad Digital Screens</div>
+        <div class="reach-stat-label" style="margin-top:4px;">Two advertising formats available</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-strip">
+    <div><div class="strip-num">10K+</div><div class="strip-label">Monthly Riders</div></div>
+    <div><div class="strip-num">2.6K</div><div class="strip-label">Instagram Followers</div></div>
+    <div><div class="strip-num">432</div><div class="strip-label">Social Posts</div></div>
+    <div><div class="strip-num">100%</div><div class="strip-label">Captive Audience</div></div>
+  </div>
+
+  <div class="ad-options-grid">
+    <div class="ad-card">
+      <div class="ad-card-header">
+        <div class="ad-icon">📱</div>
+        <div>
+          <div class="ad-tier">Digital Tier</div>
+          <div class="ad-name">iPad Screen Ad</div>
+        </div>
+      </div>
+      <div class="ad-card-body">
+        <div class="ad-price">$$$</div>
+        <div class="ad-price-sub">Monthly rate · contact for pricing</div>
+        <ul class="ad-features">
+          <li>Display ad on iPad screen inside vehicle</li>
+          <li>Rotating with other advertisers</li>
+          <li>Quick launch — no production needed</li>
+          <li>Update creative anytime</li>
+          <li>Great for restaurants, events &amp; services</li>
+        </ul>
+        <button class="btn-ad orange" onclick="document.getElementById('contact-modal').classList.add('show')">Get Pricing →</button>
+      </div>
+    </div>
+    <div class="ad-card premium">
+      <div class="ad-card-header">
+        <div class="ad-icon" style="background:var(--blue);">🚗</div>
+        <div>
+          <div class="ad-tier">Premium Tier</div>
+          <div class="ad-name">Vehicle Wrap</div>
+        </div>
+      </div>
+      <div class="ad-card-body">
+        <div class="ad-price" style="color:var(--blue);">$$$$</div>
+        <div class="ad-price-sub">Partial or full wrap · contact for pricing</div>
+        <ul class="ad-features">
+          <li>Partial or full exterior vehicle wrap</li>
+          <li>Exclusive branding on entire vehicle</li>
+          <li>Maximum street-level visibility</li>
+          <li>Driven through San Antonio daily</li>
+          <li>Social media feature included</li>
+        </ul>
+        <button class="btn-ad blue" onclick="document.getElementById('contact-modal').classList.add('show')">Get a Quote →</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="biz-types-section">
+    <div class="section-label">Any Type of Business</div>
+    <h3 style="font-family:'Bebas Neue',cursive; font-size:42px; color:var(--blue);">Who Advertises With DEST?</h3>
+    <div class="biz-tags">
+      <span class="biz-tag">🍕 Restaurants</span>
+      <span class="biz-tag">⚖️ Law Firms</span>
+      <span class="biz-tag">🍸 Bars &amp; Clubs</span>
+      <span class="biz-tag">🏥 Healthcare</span>
+      <span class="biz-tag">🏡 Real Estate</span>
+      <span class="biz-tag">💆 Wellness</span>
+      <span class="biz-tag">🎓 Education</span>
+      <span class="biz-tag">+ Any Local Business</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ BOOKING ══════════════ -->
+<div id="page-booking" class="page">
+  <div class="booking-header">
+    <div class="section-label">Private Party Rentals</div>
+    <h2 style="font-family:'Bebas Neue',cursive; font-size:clamp(38px,4vw,58px); color:var(--blue); line-height:1; margin-bottom:8px;">Reserve Your DEST Shuttle</h2>
+    <p style="font-size:16px; color:var(--muted); max-width:520px;">Perfect for bar crawls, birthday parties, bachelorette nights, and corporate events across San Antonio.</p>
+  </div>
+
+  <div class="booking-layout">
+    <div>
+      <div class="calendar-wrapper">
+        <div class="cal-header">
+          <span class="cal-month" id="cal-month-label">Loading...</span>
+          <div class="cal-nav">
+            <button class="cal-nav-btn" onclick="changeMonth(-1)">‹</button>
+            <button class="cal-nav-btn" onclick="changeMonth(1)">›</button>
+          </div>
+        </div>
+        <div class="cal-grid">
+          <div class="cal-days-header">
+            <div class="cal-day-name">Sun</div>
+            <div class="cal-day-name">Mon</div>
+            <div class="cal-day-name">Tue</div>
+            <div class="cal-day-name">Wed</div>
+            <div class="cal-day-name">Thu</div>
+            <div class="cal-day-name">Fri</div>
+            <div class="cal-day-name">Sat</div>
+          </div>
+          <div class="cal-days" id="cal-days"></div>
+        </div>
+      </div>
+      <div style="margin-top:16px; padding:16px 20px; background:var(--white); border-radius:10px; border:1px solid var(--border); display:flex; gap:24px; font-size:13px; color:var(--muted);">
+        <span>⬜ Available</span>
+        <span style="text-decoration:line-through; color:#bbb;">── Booked</span>
+        <span style="background:var(--orange); color:white; padding:1px 10px; border-radius:5px; font-weight:600;">Selected</span>
+      </div>
+    </div>
+
+    <div class="booking-form-panel">
+      <h2>Booking Details</h2>
+      <p>Fill in your info and we'll confirm your reservation with a deposit link.</p>
+
+      <div class="selected-date-display" id="selected-date-display">📅 No date selected — choose a date on the calendar</div>
+
+      <div class="deposit-info">
+        <div style="font-size:20px; margin-top:1px;">ℹ️</div>
+        <p><strong>Deposit Required to Hold Your Date</strong>A refundable deposit confirms your private rental. Balance is due the day of your event.</p>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">First Name</label><input type="text" class="form-input" placeholder="Maria" /></div>
+        <div class="form-group"><label class="form-label">Last Name</label><input type="text" class="form-input" placeholder="Gonzalez" /></div>
+      </div>
+      <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="maria@email.com" /></div>
+      <div class="form-group"><label class="form-label">Phone Number</label><input type="tel" class="form-input" placeholder="(210) 555-0100" /></div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Event Type</label>
+          <select class="form-select">
+            <option>Bar Crawl</option>
+            <option>Birthday Party</option>
+            <option>Bachelorette</option>
+            <option>Corporate Event</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Guests</label>
+          <select class="form-select">
+            <option>2–6 guests</option>
+            <option>7–12 guests</option>
+            <option>13–20 guests</option>
+            <option>20+ guests</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Additional Notes</label>
+        <textarea class="form-textarea" placeholder="Tell us about your event, any special requests, pickup location..."></textarea>
+      </div>
+      <button class="btn-book" onclick="submitBooking()">Request Reservation &amp; Pay Deposit →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ ABOUT / HOW IT WORKS ══════════════ -->
+<div id="page-about" class="page">
+  <div class="about-hero">
+    <div>
+      <div class="section-label">About DEST</div>
+      <h2 class="section-title" style="color:white; font-size:clamp(44px,5vw,70px);">San Antonio's Smarter Way to Ride</h2>
+      <p class="section-desc">DEST is a free, eco-friendly electric ride-share built for San Antonio. We're reimagining local transportation — where riders pay nothing and businesses get powerful local advertising.</p>
+    </div>
+    <div class="about-model-card">
+      <div class="model-title">The DEST Model</div>
+      <div class="model-flow">
+        <div class="model-step"><div class="model-step-icon">🏪</div><div class="model-step-text">Local businesses pay for ads on our vehicles</div></div>
+        <div class="model-arrow">↓</div>
+        <div class="model-step"><div class="model-step-icon">⚡</div><div class="model-step-text">Revenue funds our electric fleet operation</div></div>
+        <div class="model-arrow">↓</div>
+        <div class="model-step"><div class="model-step-icon">🎉</div><div class="model-step-text">Riders travel 100% free across San Antonio</div></div>
+        <div class="model-arrow">↓</div>
+        <div class="model-step"><div class="model-step-icon">🌿</div><div class="model-step-text">Zero emissions — better for everyone</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-content">
+    <div class="section-label">Our Values</div>
+    <h3 style="font-family:'Bebas Neue',cursive; font-size:48px; color:var(--blue);">What Drives Us</h3>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon-wrap">⚡</div>
+        <div><div class="value-title">Eco-First</div><div class="value-body">All DEST vehicles are 100% electric — zero emissions, lower noise, cleaner air for San Antonio.</div></div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon-wrap">🆓</div>
+        <div><div class="value-title">Always Free for Riders</div><div class="value-body">We believe transportation should be accessible. No fares, no tips required, no app needed to ride.</div></div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon-wrap">🤝</div>
+        <div><div class="value-title">Community Powered</div><div class="value-body">Our riders support local businesses — and local businesses keep rides free. A true community loop.</div></div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon-wrap">🎯</div>
+        <div><div class="value-title">Effective Advertising</div><div class="value-body">We deliver captive, engaged audiences for our advertising partners — right in their target neighborhoods.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-section">
+    <div class="section-label">FAQ</div>
+    <h3 style="font-family:'Bebas Neue',cursive; font-size:48px; margin-bottom:32px; color:var(--blue);">Common Questions</h3>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Is DEST really free? <span class="arrow">+</span></button>
+      <div class="faq-a">Yes — rides are completely free for passengers. DEST is funded entirely by businesses that advertise on our vehicles through wraps and iPad screens.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Where does DEST operate? <span class="arrow">+</span></button>
+      <div class="faq-a">DEST currently operates in San Antonio, Texas — including the River North District and surrounding areas. Check our Instagram @destridesa for current service zones.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How do I book a private party rental? <span class="arrow">+</span></button>
+      <div class="faq-a">Use the booking calendar on this site to choose your date and fill out your event details. A deposit is required to hold your reservation. Our team will confirm and send deposit instructions.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">How do I advertise with DEST? <span class="arrow">+</span></button>
+      <div class="faq-a">Visit our Advertise page to choose between a vehicle wrap (partial or full) and an iPad screen ad. Contact us through the form and our team will get back to you with rates and next steps.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Are the vehicles eco-friendly? <span class="arrow">+</span></button>
+      <div class="faq-a">Absolutely. Every DEST vehicle is 100% electric — zero direct emissions. We're committed to sustainable transportation in San Antonio.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">DE<span>S</span>T</div>
+      <p class="footer-desc">San Antonio's free electric ride-share — powered by local business advertising.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigate</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage('home')">Home</a></li>
+        <li><a onclick="showPage('about')">How It Works</a></li>
+        <li><a onclick="showPage('booking')">Book a Ride</a></li>
+        <li><a onclick="showPage('advertise')">Advertise</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Advertise</div>
+      <ul class="footer-links">
+        <li><a onclick="showPage('advertise')">Vehicle Wraps</a></li>
+        <li><a onclick="showPage('advertise')">iPad Screen Ads</a></li>
+        <li><a onclick="document.getElementById('contact-modal').classList.add('show')">Media Kit</a></li>
+        <li><a onclick="document.getElementById('contact-modal').classList.add('show')">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Follow DEST</div>
+      <ul class="footer-links">
+        <li><a href="https://www.instagram.com/destridesa" target="_blank">Instagram @destridesa</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">TikTok</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Dest LLC · San Antonio, TX</span>
+    <span class="footer-badge">Free Electric Rides</span>
+  </div>
+</footer>
+
+<!-- ══════════════ BOOKING SUCCESS MODAL ══════════════ -->
+<div class="modal-overlay" id="booking-modal">
+  <div class="modal">
+    <div class="modal-icon">🎉</div>
+    <div class="modal-title">Request Sent!</div>
+    <p class="modal-body">We've received your party rental request. Our team will reach out within 24 hours with your deposit link to confirm your date.</p>
+    <button class="modal-close" onclick="document.getElementById('booking-modal').classList.remove('show')">Got it!</button>
+  </div>
+</div>
+
+<!-- ══════════════ CONTACT / ADVERTISE MODAL ══════════════ -->
+<div class="modal-overlay" id="contact-modal">
+  <div class="modal">
+    <div class="modal-icon">📣</div>
+    <div class="modal-title">Let's Talk Advertising</div>
+    <p class="modal-body">Reach out to our team at <strong>info@destrides.com</strong> or follow us on Instagram <strong>@destridesa</strong> to get current pricing and availability for your campaign.</p>
+    <button class="modal-close" onclick="document.getElementById('contact-modal').classList.remove('show')">Close</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
